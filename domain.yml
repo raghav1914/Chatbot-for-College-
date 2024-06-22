@@ -1,0 +1,233 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_admission_procedure
+  - ask_admission
+  - ask_eligibility_criteria
+  - ask_seat_matrix
+  - ask_supernumerary_seats
+  - ask_fees
+  - ask_bank_details
+  - ask_faqs
+  - ask_contact
+  - ask_department_info
+  - ask_vision_mission
+  - ask_courses
+  - ask_ai_course_info
+  - ask_cse_course_info
+  - ask_ece_course_info
+  - ask_ee_course_info
+  - ask_it_course_info
+  - ask_me_course_info
+  - ask_data_science_course_info
+  - ask_VLSI_course_info
+  - ask_companies_list
+  - ask_eligibility_requirements
+  - ask_scholarship_programmes
+  - ask_bird_info
+  - ask_apply_masters_program
+  - ask_exchange_programme
+  - ask_hostel_info
+  - ask_workshop_info
+  - ask_library_info
+  - ask_extracurricular_info
+  - ask_sports_info
+  - ask_medical_info
+  - ask_exams
+  - ask_career_openings
+  - ask_smart_india__hackathon
+  - ask_events
+  - ask_placements
+  - thankyou
+
+entities:
+  - Branch
+  - Rajasthan_State
+  - Out_of_Rajasthan_State
+  - Indian_States
+  - TFWS
+  - KM
+  - PMSSS
+  - AICTE
+  - Pragati_Scholarship
+  - Fee_Type
+  - course
+  - department
+  - date
+  - position
+  - email
+  - phone_number
+  - event
+  - activity
+
+slots:
+  course:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: course
+  department:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: department
+  date:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: date
+  position:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: position
+  email:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: email
+  phone_number:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: phone_number
+  event:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: event
+  activity:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: activity
+
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
+  utter_ask_admission:
+    - text: "The admission process for B.Tech for the academic session is conducted by the Department of Technical Education (DTE), Rajasthan through the Centre for Electronic Governance (CEG), Jaipur. Eligible candidates may apply through various modes. You can visit this link https://bkbiet.ac.in/admission/ . How can I assist you further?"
+
+  utter_ask_courses:
+    - text: "We offer various courses in engineering including Computer Science, Electronics & Communication, Electrical, Mechanical, Information Technology, Artificial Intelligence, Data Science and VLSI. How can I assist you further?"
+
+  utter_ask_fees:
+    - text: "The fee structure for B.Tech is as follows: B.Tech (Rajasthan State) Tuition Fee: Rs. 77,000, B.Tech (Out of Rajasthan State) Tuition Fee: Rs. 82,000. Hostel charges and other fees apply additionally."
+
+  utter_ask_contact:
+    - text: "For assistance with B.Tech admission queries, you can contact the Admission & Counseling Cell at 7878339723, 8696348123, 8209539616, or 9828765129. You can also write to us at admissions@bkbiet.ac.in. How can I assist you further?"
+
+  utter_ask_events:
+    - text: "We have various events scheduled throughout the year including technical fests, cultural events, and sports activities. How can I assist you further?"
+
+  utter_ask_exams:
+    - text: "The exam schedule for B.Tech courses will be announced on the official website. How can I assist you further?"
+
+  utter_ask_placements:
+    - text: "Our placement cell works diligently to provide students with the best placement opportunities. We have a strong record of placements with reputed companies. How can I assist you further?"
+
+  utter_department_info:
+    - text: "We have several departments including Computer Science, Electronics & Communication, Electrical, Mechanical, Information Technology, and more. How can I assist you further?"
+
+  utter_vision_mission:
+    - text: "Our vision is to be a center of excellence in technical education and research. Our mission is to provide quality education and to promote innovation and entrepreneurship. How can I assist you further?"
+
+  utter_data_science_course_info:
+    - text: "The Data Science course covers topics like machine learning, data analytics, big data technologies, and more. How can I assist you further?"
+
+  utter_VLSI_course_info:
+    - text: "The VLSI course includes subjects like digital design, semiconductor devices, integrated circuits, and more. How can I assist you further?"
+
+  utter_ai_course_info:
+    - text: "Artificial Intelligence Engineering provides knowledge with the latest technological advancements in the field of Artificial Intelligence and turns learners into global contributors as innovators, entrepreneurs, and researchers. The mission is to focusing on holistic data science research and education addressing the challenges of large data sets, high ingestion rates, short analysis time windows, different content, media types, contradicting, incorrect, and missing information."
+
+  utter_cse_course_info:
+    - text: "Computer Science Engineering aims to produce excellent, innovative, self-motivated engineers and entrepreneurs who can sustain in the rapidly changing field of applied computational technology in industries and be among the most highly reputed technology-focused learning institutions in the world. The mission is to focusing on holistic data science research and education addressing the challenges of large data sets, high ingestion rates, short analysis time windows, different content, media types, contradicting, incorrect, and missing information."
+
+  utter_ee_course_info:
+    - text: "Electrical Engineering provides students with an understanding in various areas including Electrical Power Generation, Transmission and Distribution, Power System Analysis, Machine Design, Power Electronics, Control System, Renewable Energy Technologies, Smart Grid, Microgrid, Fuzzy Logic, Neural Network, Artificial Intelligence, and various simulation tools. The mission is to imparting quality education and skills by establishing the state of the art research facilities to students that further contributes to the socio-economic growth and eventually contributing to the sustainable development of the society."
+
+  utter_ece_course_info:
+    - text: "Electronics & Communication Engineering aims to attain academic excellence in teaching & research by imparting knowledge required to the students for recent and advanced engineering & technology. The mission is to provide a unique learning environment through the structured teaching-learning process to enable the students to face the challenges in electronics field."
+  
+  utter_it_course_info:
+    - text: "Information Technology empowers learners to stimulate and exchange the creation of an information knowledge base in an integrated environment. The mission is to enhance the technical skills to equip the students to cater to the industrial demands in the field of Information Technology."
+
+  utter_me_course_info:
+    - text: "Mechanical Engineering aims to be recognized as a leader of its discipline in a manner that exemplifies the ways of learning, discovering, and engaging to provide quality education leading to qualified and innovative engineers for catering industry and social needs. The mission is to share knowledge through educational programs and provide the facilities for research in the field."
+  
+  utter_ask_admission_procedure:
+    - text: "The admission process for B.Tech (I year) for the academic session 2024-25 is conducted by the Department of Technical Education (DTE), Rajasthan through the Centre for Electronic Governance (CEG), Jaipur. Eligible candidates may apply through various modes. How can I assist you further?"
+
+  utter_ask_eligibility_criteria:
+    - text: "The eligibility criteria for B.Tech (I year) admission require candidates to have passed the class 12 exam with a minimum of 45% marks (40% marks for reserved category) in the respective subjects. Alternatively, candidates who have passed a minimum 3 years Diploma examination with at least 45% marks (40% marks for reserved category) are also eligible, subject to vacancies. How can I assist you further?"
+
+  utter_ask_seat_matrix:
+    - text: "The seat matrix for undergraduate B.Tech programmes is as follows: 60 seats for Artificial Intelligence Engineering, 120 seats for Computer Science Engineering, 60 seats for Electronics & Communication Engineering, 60 seats for Electrical Engineering, and 60 seats for Information Technology."
+
+  utter_ask_supernumerary_seats:
+    - text: "Supernumerary seats are available for various categories including TFWS, KM, PMSSS, and AICTE Pragati Scholarship. How can I assist you further?"
+
+  
+  utter_ask_bank_details:
+    - text: "The bank details for fee payment are as follows: Account Name: B K Birla Institute of Engineering & Technology, Pilani, Account Number: 153801000110, Bank Name: ICIC Bank, Pilani, IFSC Code: ICIC0001538. How can I assist you further?"
+
+  utter_ask_faqs:
+    - text: "Frequently Asked Questions (FAQs) regarding B.Tech admission can be found on our website. How can I assist you further?"
+
+  
+  utter_companies_list:
+    - text: "The list of companies visiting for placements includes TCS, Infosys, Wipro, IBM, Cognizant, and many more. You can find the complete list on our placement page. The list of companies visiting for placements includes TCS, Infosys, Wipro, IBM, Cognizant, and many more. You can find the complete list on our placement page. Our students have consistently secured top positions in these esteemed organizations, reflecting the quality of education and training they receive. We also offer comprehensive career support to ensure our graduates are well-prepared for the professional world."
+
+  utter_eligibility_requirements:
+    - text: "The eligibility requirements for internships vary by company. Generally, students need to be in their final year and have a good academic record. Please refer to our internship page for specific requirements."
+
+  utter_scholarship_programmes:
+    - text: "We offer several scholarship programs including TFWS, KM, PMSSS, AICTE Pragati Scholarship. Many scholarships are also available for students and you could apply to multiple scholarships based on eligibly criteria. However, you can avail only one, whichever may be the highest. N+I offers following scholarships: (i.) Eiffel Scholarship (ii.) Ile-de-France iii. Charpak Scholarship (iv.) Pays de Loire Region (v.) Limousin Region (vi.) Picardie Region (vii.) « n+i » Grants (viii.) Institutional Grant’s on Tuition Fees. Please visit our scholarship page for more details."
+
+  utter_bird_info:
+    - text: "BKBIET International Relations Division (BIRD) facilitates internships and job opportunities abroad through academic collaborations with international universities. How can I assist you further?"
+
+  utter_apply_masters_program:
+    - text: "To apply for the Master’s Program through Network “n+i”, visit our website and follow the application procedure. How can I assist you further?"
+
+  utter_exchange_programme:
+    - text: "Our exchange programme offers academic collaborations with international universities, allowing students to study abroad. How can I assist you further?"
+
+  utter_hostel_info:
+    - text: "BKBIET has separate hostels for girls and boys, with a total of 1000 seats. Caring wardens and vigilant 24×7 security ensure a pleasant stay for students, allowing them to focus on academics. The in-house mess facility, located adjacent to the hostels, provides nutritious, hygienic, and healthy food. Even those who leave their homes for the first time can be reassured that these hostels will eventually turn out to be their home away from home. The hostels also offer recreational facilities and study rooms, fostering a balanced and conducive environment for both relaxation and learning."
+
+  utter_workshop_info:
+    - text: "The workshop is unique in its features. Spread over an area of 13,000 square feet, the Mechanical Workshop includes a fitting shop, smithy shop, and carpentry shop. The workshop is equipped with the latest lathe, milling, shaping, shearing, welding, and various standard machines of international and national make. It also includes advanced CNC machines and 3D printers, providing students with hands-on experience with cutting-edge technology."
+
+  utter_library_info:
+    - text: "We have one Issue Library and two Reference Libraries. The library system functions as an Integrated Knowledge Resource Centre, with adequately stocked books, periodicals, references, educational CDs/DVDs, and national and international journals, covering all aspects of academic studies and research materials. You can enjoy access to the National Digital Library as well. The air-conditioned library is Wi-Fi-enabled, providing a comfortable and connected environment for study and research. Additionally, the libraries offer digital workstations and dedicated study zones to support diverse learning needs."
+
+  utter_extra_curricular_info:
+    - text: "We believe in providing an energetic environment for the holistic development of students. Students are encouraged to join in-campus clubs, including the Photography Club, Dance Club, Music Club, Drama/Mime Club, and more. Many students also take part in societal development work through various activity groups on campus. The Sarala Birla Cultural and Creativity Centre has been actively involved in such creative pursuits, fostering a vibrant community where students can explore their interests and talents. Regular workshops and events are organized to inspire creativity and cultural engagement among students."
+
+  utter_sports_info:
+    - text: "The importance of sports in our daily lives cannot be questioned. There are so many reasons why sport is an important part of our lives. First of all, doing sports can make us healthy, both physically and mentally. In the past, people believed that health was only about the physical part of our body, but now we know that there is a mental part of our health as well. So, doing sports can also help us to have a better mental health. In addition, sports can help us to build our character. Doing sports can teach us to be more disciplined, more responsible and more dedicated. Keeping all these facts in mind BKBIET provides all sports facilities which includes Cricket, Football, Basketball, Badminton, Table Tennis and many more to the students"
+
+  utter_medical_info:
+    - text: "There is an on-campus arrangement of regular visit of a Physician at Medical Centre and a Resident Medical Assistant. For major ailments, students are taken to nearby multi-specialty Birla Sarvajanik Hospital."
+
+  utter_career_openings:
+    - text: "Applications are invited from interested and motivated candidates for the post of Training & Placement Coordinator via email. Kindly send your application to director@bkbiet.ac.in with the subject line as “Training & Placement Coordinator Application."
+
+  utter_smart_india__hackathon:
+    - text: "Student of BK Birla Institute of Engineering and Technology (Dept. of Computer Science Engineering and Artificial Intelligence) got first position at National Level in Smart India Hackathon 2022. A two day event held on 25 -26 August 2022 at Vaageswari College of Engineering, Karimnagar, Telengana. The problem statement was “To digitally limit the screen time of the children in a friendlier manner. Smart India Hackathon (SIH) is a nationwide initiative by the Ministry of Education’s Innovation Cell to provide students a platform to solve the pressing problems of the government. The team was : Team Minions - Ishan Agrawal, Raghav Saxena, Abhinandan Yadav, Ojas Sharma, Ira Goyal,  Naman Gupta."
+
+  utter_thank_you:
+    - text: "Ok, i was glad to help you. You can reach me anytime in case of further assistance."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

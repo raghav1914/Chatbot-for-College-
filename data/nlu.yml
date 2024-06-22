@@ -1,0 +1,293 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+
+- intent: ask_admission
+  examples: |
+    - How can I get admission?
+    - Tell me about the admission process.
+    - What are the admission requirements?
+
+- intent: ask_courses
+  examples: |
+    - What courses do you offer?
+    - List the available courses.
+    - Tell me about the engineering programs.
+    - What courses are available in BKBIET?
+
+- intent: ask_fees
+  examples: |
+    - Tell me about the fee structure.
+    - What are the fees for courses?
+    - How much is the tuition fee?
+    - What is the fee structure for B.Tech programmes?
+    - Can you provide information about the fee for B.Tech (I year)?
+    - How much do I need to pay for B.Tech admission?
+    - What is the fee structure?
+    - Can you provide details about the fees?
+    - How much does the program cost?
+    - Explain the fee structure, please.
+
+- intent: ask_contact
+  examples: |
+    - How can I contact you?
+    - What is your contact information?
+    - Give me your phone number.
+    - How can I contact the university?
+    - Give me contact details.
+    - Provide contact information.
+
+- intent: ask_events
+  examples: |
+    - What events are happening?
+    - Tell me about upcoming events.
+    - Are there any events this month?
+    - What events are coming up?
+    - Can you tell me about upcoming events?
+    - Give me information about events.
+
+- intent: ask_exams
+  examples: |
+    - When are the exams?
+    - Tell me the exam schedule.
+    - When is the next exam?
+
+- intent: ask_placements
+  examples: |
+    - Tell me about the placements.
+    - How are the placements at your institution?
+    - What is the placement record?
+
+- intent: ask_department_info
+  examples: |
+    - Tell me about the departments
+    - What departments do you have?
+    - Information about departments
+
+- intent: ask_vision_mission
+  examples: |
+    - What is the vision and mission?
+    - Tell me about the vision and mission
+
+- intent: ask_ai_course_info
+  examples: |
+    - Tell me about Artificial Intelligence Engineering.
+    - What is taught in the Artificial Intelligence course?
+    - Information about AI engineering program.
+
+- intent: ask_cse_course_info
+  examples: |
+    - What is Computer Science Engineering (Data Science)?
+    - Tell me about the B.Tech program in Computer Science Engineering (Data Science).
+    - Information about CSE (Data Science) course.
+
+- intent: ask_ece_course_info
+  examples: |
+    - What subjects are covered in Electronics & Communication Engineering?
+    - Tell me about ECE program.
+    - Information about Electronics & Communication Engineering.
+
+- intent: ask_ee_course_info
+  examples: |
+    - What topics are included in Electrical Engineering?
+    - Tell me about Electrical Engineering course.
+    - Information about EE program.
+
+- intent: ask_it_course_info
+  examples: |
+    - What is taught in Information Technology?
+    - Tell me about the IT program.
+    - Information about Information Technology course.
+
+- intent: ask_me_course_info
+  examples: |
+    - What subjects are taught in Mechanical Engineering?
+    - Tell me about ME course.
+    - Information about Mechanical Engineering program.
+
+- intent: ask_data_science_course_info
+  examples: |
+    - What is Data Science course?
+    - Tell me about Data Science program.
+    - Information about Data Science Engineering.
+
+- intent: ask_VLSI_course_info
+  examples: |
+    - What is VLSI Engineering?
+    - Tell me about the VLSI program.
+    - Information about VLSI course.
+
+- intent: ask_admission_procedure
+  examples: |
+    - Admission Process: Department of Technical Education (DTE), Rajasthan has appointed Centre for Electronic Governance (CEG), Jaipur to conduct the centralized admission process for the academic session 2024-25.
+    - How can I apply for admission in B.Tech (I year) for the academic session 2024-25?
+    - What are the modes of admission for B.Tech (I year) in the academic session 2024-25?
+    - What is the admission procedure?
+    - Can you tell me about the admission process?
+    - How do I apply for admission?
+    - Explain the admission process, please.
+
+- intent: ask_eligibility_criteria
+  examples: |
+    - What are the eligibility criteria for B.Tech (I year) admission?
+    - What is the minimum qualification required for B.Tech (I year) admission?
+    - Can you provide details about the academic qualification required for B.Tech (I year) admission?
+    - What are the eligibility criteria?
+    - Can you tell me about the eligibility requirements?
+    - What qualifications are needed for admission?
+    - Explain the eligibility criteria, please.
+
+- intent: ask_seat_matrix
+  examples: |
+    - What is the seat matrix for undergraduate B.Tech programmes?
+    - How are the seats distributed among different branches?
+    - Can you provide information about the distribution of seats for B.Tech programmes?
+    - Can you provide information about the seat matrix?
+    - What is the seat distribution?
+    - How are the seats allocated?
+    - Explain the seat matrix, please.
+
+- intent: ask_supernumerary_seats
+  examples: |
+    - What are the supernumerary seats available for B.Tech admission?
+    - Can you provide details about additional reserved seats for B.Tech admission?
+    - Are there any supernumerary seats available?
+    - Can you tell me about the supernumerary seats?
+    - How many supernumerary seats are there?
+    - Explain the concept of supernumerary seats, please.
+
+
+- intent: ask_bank_details
+  examples: |
+    - What are the bank details for fee payment?
+    - Can you provide information about the bank account for fee payment?
+    - How do I make the payment for B.Tech admission?
+    - What are the bank details for fee payment?
+    - Can you share the bank account information?
+    - How do I make the fee payment?
+    - Provide the bank details, please.
+
+- intent: ask_faqs
+  examples: |
+    - Where can I find FAQs regarding B.Tech admission?
+    - Do you have any frequently asked questions about B.Tech admission?
+    - Can you provide answers to common queries about B.Tech admission?
+    - Are there any frequently asked questions?
+    - Can I get some information about FAQs?
+    - Where can I find answers to common questions?
+    - Explain the FAQs, please.
+
+- intent: ask_smart_india__hackathon
+  examples: |
+    - Who were the participants of Smart India Hackathon? 
+    - What is the Smart India Hackathon?
+    - Can you tell me about the Smart India Hackathon?
+    - How can I participate in the Smart India Hackathon?
+    - What are the details of the Smart India Hackathon?
+    - Explain the Smart India Hackathon to me.
+    - When is the Smart India Hackathon happening?
+    - What are the benefits of joining the Smart India Hackathon?
+    - Where can I find information about the Smart India Hackathon?
+
+- intent: ask_companies_list
+  examples: |
+    - Which companies are enlisted for placements?
+    - Can you provide a list of companies for placements?
+    - What are the companies visiting for recruitment?
+    - Give me details about the enlisted companies.
+
+- intent: ask_eligibility_requirements
+  examples: |
+    - What are the eligibility requirements for internships?
+    - Can you explain the eligibility criteria for internships?
+    - What qualifications are needed to apply for internships?
+    - Explain the eligibility requirements, please.
+
+- intent: ask_scholarship_programmes
+  examples: |
+    - Can you provide information about scholarship programmes?
+    - What scholarships are available?
+    - How can I apply for scholarships?
+    - Explain the scholarship programmes, please.
+
+- intent: ask_bird_info
+  examples: |
+    - Can you tell me about BIRD?
+    - What is BKBIET International Relations Division (BIRD)?
+    - How does BIRD facilitate internships and job opportunities abroad?
+    - Explain BIRD, please.
+
+- intent: ask_apply_masters_program
+  examples: |
+    - How do I apply for Master’s Program through Network “n+i”?
+    - What is the application procedure for Master’s Program through Network “n+i”?
+    - Can you explain how to apply for Master’s Program through Network “n+i”?
+    - Explain the application procedure, please.
+
+- intent: ask_exchange_programme
+  examples: |
+    - Can you provide information about the exchange programme?
+    - What are the details of the academic collaborations with international universities?
+    - How does the exchange programme work?
+    - Explain the exchange programme, please.
+
+- intent: ask_hostel_info
+  examples: |
+    - Tell me about the hostel facilities.
+    - What are the hostel amenities?
+    - Give me details about the hostels.
+
+- intent: ask_workshop_info
+  examples: |
+    - Provide information about the workshop.
+    - What are the features of the workshop?
+    - Tell me about the equipment in the workshop.
+
+- intent: ask_library_info
+  examples: |
+    - What are the library facilities?
+    - Can you tell me about the library resources?
+    - Give me information about the library.
+
+- intent: ask_extracurricular_info
+  examples: |
+    - Tell me about the extracurricular activities.
+    - What clubs are available for students?
+    - Give me details about the cultural center.
+
+- intent: ask_sports_info
+  examples: |
+    - Provide information about sports facilities.
+    - What sports facilities are available?
+    - Tell me about sports activities.
+
+- intent: ask_medical_info
+  examples: |
+    - What medical facilities are there?
+    - Can you tell me about the medical center?
+    - Provide information about healthcare.
+
+- intent: ask_career_openings
+  examples: |
+    - What are the current job openings?
+    - Can you tell me about job opportunities?
+    - Provide information about career openings.
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Bye
+    - See you later
+
+
+
+- intent: thankyou
+  examples: |
+    - Thank you
+    - Thanks
+    - Thank you so much
+    - That would be all

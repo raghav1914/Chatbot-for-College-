@@ -1,0 +1,261 @@
+version: "3.1"
+stories:
+  - story: greet and ask about admission
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: ask about courses
+    steps:
+      - intent: ask_courses
+      - action: utter_ask_courses
+
+  - story: ask about fees
+    steps:
+      - intent: ask_fees
+      - action: utter_ask_fees
+
+  - story: ask for contact information
+    steps:
+      - intent: ask_contact
+      - action: utter_ask_contact
+
+  - story: ask about events
+    steps:
+      - intent: ask_events
+      - action: utter_ask_events
+
+  - story: ask about exams
+    steps:
+      - intent: ask_exams
+      - action: utter_ask_exams
+
+  - story: ask about placements
+    steps:
+      - intent: ask_placements
+      - action: utter_ask_placements
+  
+  - story: ask about bank details
+    steps:
+      - intent: ask_bank_details
+      - action: utter_ask_bank_details
+
+  - story: greet and department info
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_department_info
+      - action: utter_department_info
+
+  - story: ask about vision and mission
+    steps:
+      - intent: ask_vision_mission
+      - action: utter_vision_mission
+
+  # Specific course inquiries
+  - story: ask about data science course
+    steps:
+      - intent: ask_data_science_course_info
+      - action: utter_data_science_course_info
+
+  - story: ask about VLSI course
+    steps:
+      - intent: ask_VLSI_course_info
+      - action: utter_VLSI_course_info
+
+  # Admission inquiries
+  - story: Admission Procedure Inquiry
+    steps:
+      - intent: ask_admission_procedure
+      - action: utter_ask_admission_procedure
+
+  - story: ask about get admission
+    steps: 
+      - intent: ask_admission
+      - action: utter_ask_admission
+
+  - story: ask for companies list
+    steps:
+      - intent: ask_companies_list
+      - action: utter_companies_list
+
+  - story: ask for eligibility requirements
+    steps:
+      - intent: ask_eligibility_requirements
+      - action: utter_eligibility_requirements
+
+  - story: ask for scholarship programmes
+    steps:
+      - intent: ask_scholarship_programmes
+      - action: utter_scholarship_programmes
+
+  - story: ask for BIRD information
+    steps:
+      - intent: ask_bird_info
+      - action: utter_bird_info
+
+  - story: apply for Master’s Program through Network “n+i”
+    steps:
+      - intent: ask_apply_masters_program
+      - action: utter_apply_masters_program
+
+  - story: exchange programme information
+    steps:
+      - intent: ask_exchange_programme
+      - action: utter_exchange_programme
+
+  - story: Hostel Information
+    steps:
+      - intent: ask_hostel_info
+      - action: utter_hostel_info
+
+  - story: Workshop Information
+    steps:
+      - intent: ask_workshop_info
+      - action: utter_workshop_info
+
+  - story: Library Information
+    steps:
+      - intent: ask_library_info
+      - action: utter_library_info
+
+  - story: Extracurricular Information
+    steps:
+      - intent: ask_extracurricular_info
+      - action: utter_extra_curricular_info
+
+  - story: Sports Information
+    steps:
+      - intent: ask_sports_info
+      - action: utter_sports_info
+
+  - story: Medical Information
+    steps:
+      - intent: ask_medical_info
+      - action: utter_medical_info
+
+  - story: Career Openings
+    steps:
+      - intent: ask_career_openings
+      - action: utter_career_openings
+
+  - story: Courses Inquiry
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_courses
+      - action: utter_ask_courses
+
+  - story: Fee Structure Inquiry
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_fees
+      - action: utter_ask_fees
+
+  - story: Contact Information Inquiry
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_contact
+      - action: utter_ask_contact
+
+  - story: Events Inquiry
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_events
+      - action: utter_ask_events
+
+  - story: Exams Inquiry
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_exams
+      - action: utter_ask_exams
+
+  - story: Placements Inquiry
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_placements
+      - action: utter_ask_placements
+
+  - story: Department Wise Boys and Girls Ratio Inquiry
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_department_info
+      - action: utter_department_info
+
+  - story: Winning Smart India Hackathon Announcement
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_smart_india__hackathon
+      - action: utter_smart_india__hackathon
+
+  - story: say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Courses Inquiry 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_ai_course_info
+      - action: utter_ai_course_info
+  
+  - story: Courses Inquiry 3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_cse_course_info
+      - action: utter_cse_course_info
+
+  - story: facility
+    steps:
+      - intent: facilities
+      - action: utter_facilities
+
+  - story: Eligibility Criteria Inquiry
+    steps:
+      - intent: ask_eligibility_criteria
+      - action: utter_ask_eligibility_criteria
+
+
+  - story: Courses Inquiry 4
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_ece_course_info
+      - action: utter_ece_course_info
+  
+
+  - story: Courses Inquiry 5
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_ee_course_info
+      - action: utter_ee_course_info
+  
+
+  - story: Courses Inquiry 6
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_it_course_info
+      - action: utter_it_course_info
+
+  - story: Courses Inquiry 7
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_me_course_info
+      - action: utter_me_course_info
+
+  - story: Thank You
+    steps:
+      - intent: thankyou
+      - action: utter_thank_you
